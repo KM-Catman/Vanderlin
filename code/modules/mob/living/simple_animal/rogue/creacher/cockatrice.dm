@@ -63,18 +63,15 @@
 	aggressive = TRUE
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/cockatrice
-	body_eater = TRUE
+	body_eater = FALSE
 
 	ai_controller = /datum/ai_controller/troll
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
 
-	var/critvuln = FALSE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/cockatrice/Initialize()
 	. = ..()
-	if(critvuln)
-		ADD_TRAIT(src, TRAIT_CRITICAL_WEAKNESS, TRAIT_GENERIC)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/cockatrice/death(gibbed)
 	..()
