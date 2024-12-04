@@ -126,7 +126,7 @@
 		known_people[H.real_name]["VCOLOR"] = H.voice_color
 		var/used_title = H.get_role_title()
 		if(!used_title)
-			used_title = "unknown"
+			used_title = "Unknown"
 		known_people[H.real_name]["FJOB"] = used_title
 		known_people[H.real_name]["FGENDER"] = H.gender
 		known_people[H.real_name]["FAGE"] = H.age
@@ -150,7 +150,7 @@
 				if(H.gender == FEMALE && J.f_title)
 					used_title = J.f_title
 			if(!used_title)
-				used_title = "unknown"
+				used_title = "Unknown"
 			M.known_people[H.real_name]["FJOB"] = used_title
 			M.known_people[H.real_name]["FGENDER"] = H.gender
 			M.known_people[H.real_name]["FAGE"] = H.age
@@ -807,6 +807,8 @@
 // Get a bonus multiplier dependant on age to apply to exp gains. Arg is a skill path.
 /datum/mind/proc/get_learning_boon(skill)
 	var/mob/living/carbon/human/H = current
+	if(!istype(H))
+		return 1
 	var/boon = H.age == AGE_OLD ? 0.8 : 1 // Can't teach an old dog new tricks. Most old jobs start with higher skill too.
 	boon += get_skill_level(skill) / 10
 	return boon
