@@ -65,9 +65,11 @@
 	remains_type = /obj/effect/decal/remains/cockatrice
 	body_eater = FALSE
 
-	ai_controller = /datum/ai_controller/troll
+	ai_controller = /datum/ai_controller/cockatrice
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
+
+	var/datum/action/cooldown/mob_cooldown/spell/cockatriceglare/cockatrice
 
 
 /mob/living/simple_animal/hostile/retaliate/rogue/cockatrice/Initialize()

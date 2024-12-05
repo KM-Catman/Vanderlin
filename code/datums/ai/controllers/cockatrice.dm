@@ -4,8 +4,8 @@
 	ai_movement = /datum/ai_movement/basic_avoidance
 
 	blackboard = list(
-		BB_TARGETTING_DATUM = new /datum/targetting_datum/basic/allow_items()
-
+		BB_TARGETTING_DATUM = new /datum/targetting_datum/basic/allow_items(),
+		BB_TARGETED_ACTION = /obj/effect/proc_holder/spell/targeted/cockatriceglare()
 	)
 
 	planning_subtrees = list(
@@ -14,6 +14,8 @@
 		/datum/ai_planning_subtree/simple_find_target/cockatrice,
 		/datum/ai_planning_subtree/find_food/cockatrice,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
+
+		/datum/ai_planning_subtree/targeted_mob_ability/cockatrice,
 	)
 
 	idle_behavior = /datum/idle_behavior/idle_random_walk
