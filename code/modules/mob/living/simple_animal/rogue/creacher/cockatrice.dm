@@ -22,14 +22,14 @@
 	vision_range = 8
 	aggro_vision_range = 8
 
-	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/poultry = 1,
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/poultry = 8,
 						/obj/item/natural/feather = 3)
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/poultry = 1,
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/poultry = 10,
 						/obj/item/natural/hide = 3,
 						/obj/item/natural/feather = 4)
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/poultry= 2,
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/poultry= 10,
 						/obj/item/natural/hide = 4,
-						/obj/item/natural/feather = 5)
+						/obj/item/natural/feather = 6)
 
 	health = COCKATRICE_HEALTH
 	maxHealth = COCKATRICE_HEALTH
@@ -39,7 +39,7 @@
 					/obj/item/reagent_containers/food/snacks/produce/wheat,
 					/obj/item/reagent_containers/food/snacks/produce/oat) // It's still a chicken
 
-	base_intents = list(/datum/intent/simple/peck)
+	base_intents = list(/datum/intent/simple/peckdeadly)
 	attack_sound = list('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg','sound/combat/wooshes/blunt/wooshhuge (3).ogg')
 	melee_damage_lower = 25
 	melee_damage_upper = 40

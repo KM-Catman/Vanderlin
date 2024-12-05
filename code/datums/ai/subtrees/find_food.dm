@@ -45,6 +45,8 @@
 /datum/ai_planning_subtree/find_food/troll
 	vision_range = 7
 
+/datum/ai_planning_subtree/find_food/cockatrice
+	vision_range = 10
 
 /datum/ai_planning_subtree/find_dead_bodies/bog_troll
 	vision_range = 7

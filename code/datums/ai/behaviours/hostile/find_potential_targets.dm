@@ -91,3 +91,6 @@
 	if (succeeded)
 		controller.CancelActions()
 		controller.pawn.icon_state = "Trolla"
+
+/datum/ai_behavior/find_potential_targets/cockatrice
+	vision_range = 10

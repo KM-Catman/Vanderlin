@@ -664,3 +664,18 @@
 	miss_text = "bites the air!"
 	miss_sound = PUNCHWOOSH
 	item_damage_type = "stab"
+
+/datum/intent/simple/peckdeadly
+	name = "peck"
+	icon_state = "instrike"
+	attack_verb = list("pecks", "scratches")
+	animname = "blank22"
+	blade_class = BCLASS_STAB
+	hitsound = "genstab"
+	chargetime = 0
+	penfactor = 30
+	swingdelay = 1
+	candodge = TRUE
+	canparry = TRUE
+	miss_text = "pecks the air!"
+	item_damage_type = "stab"
