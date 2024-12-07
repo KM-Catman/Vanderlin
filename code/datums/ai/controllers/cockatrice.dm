@@ -5,7 +5,7 @@
 
 	blackboard = list(
 		BB_TARGETTING_DATUM = new /datum/targetting_datum/basic/allow_items(),
-		BB_TARGETED_ACTION = /obj/effect/proc_holder/spell/targeted/cockatriceglare()
+		BB_TARGETED_ACTION = new /obj/effect/proc_holder/spell/targeted/cockatriceglare()
 	)
 
 	planning_subtrees = list(

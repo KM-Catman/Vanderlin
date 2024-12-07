@@ -8,8 +8,9 @@
 	sound = 'sound/magic/marked.ogg'
 	associated_skill = /datum/skill/magic/druidic
 	req_items = list()
-	invocation = "glare"
+	invocation_emote_self = span_notice("My eyes glaze with an intense glare.")
 	invocation_type = "emote" //can be none, whisper, emote and shout
+	invocation = "glares intensely."
 
 /obj/effect/proc_holder/spell/targeted/cockatriceglare/cast(list/targets,mob/user = usr)
 
@@ -22,4 +23,4 @@
 			sleep(5 SECONDS)
 			victim.can_see_cone(user)
 			victim.Stun(10 SECONDS)
-	return TRUE
+	return
