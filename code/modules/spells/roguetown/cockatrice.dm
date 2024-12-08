@@ -2,13 +2,14 @@
 	name = "Glare of the Cockatrice"
 	range = 12
 	overlay_state = "null"
-	releasedrain = 0
+	releasedrain = 30
 	charge_max = 2 MINUTES
 	max_targets = 0
 	sound = 'sound/magic/marked.ogg'
 	associated_skill = /datum/skill/magic/druidic
 	req_items = list()
 	invocation_type = "none"
+	ignore_cockblock = TRUE // The True Cock Ignores All Blocks.
 
 /obj/effect/proc_holder/spell/targeted/cockatriceglare/cast(list/targets,mob/user = usr)
 	var/list/attacked = list()

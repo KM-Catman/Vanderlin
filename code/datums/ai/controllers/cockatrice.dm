@@ -14,7 +14,6 @@
 		/datum/ai_planning_subtree/simple_find_target/cockatrice,
 		/datum/ai_planning_subtree/find_food/cockatrice,
 		/datum/ai_planning_subtree/targeted_mob_ability/cockatrice,
-		/datum/ai_planning_subtree/targeted_mob_ability/continue_planning,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
 	)
 
