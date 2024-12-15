@@ -1244,6 +1244,7 @@
 #include "code\modules\jobs\job_types\roguetown\apprentices\squire.dm"
 #include "code\modules\jobs\job_types\roguetown\apprentices\wapprentice.dm"
 #include "code\modules\jobs\job_types\roguetown\church\adept.dm"
+#include "code\modules\jobs\job_types\roguetown\church\druid.dm"
 #include "code\modules\jobs\job_types\roguetown\church\inquisitor.dm"
 #include "code\modules\jobs\job_types\roguetown\church\monk.dm"
 #include "code\modules\jobs\job_types\roguetown\church\priest.dm"
